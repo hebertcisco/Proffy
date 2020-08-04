@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://raw.githubusercontent.com/hebertcisco/Proffy/master/.github/logo.svg" alt="Proffy" width="280"/>
+   <img src="https://github.com/hebertcisco/Proffy/blob/master/.github/logo.png?raw=true" alt="Proffy" width="280"/>
 </p>
 
 <p align="center">	
@@ -50,8 +50,8 @@
 
 ### Web Screenshot
 <div style="display: flex; flex-direction: 'row'; align-items: 'center';">
-   <img src="" width="400px">
-   <img src="" width="400px">
+   <img src="https://github.com/hebertcisco/Proffy/blob/master/.github/web-landing.png?raw=true" width="400px">
+   <img src="https://github.com/hebertcisco/Proffy/blob/master/.github/web-list.png.png?raw=true" width="400px">
 </div>
 
 ### Mobile Screenshot
