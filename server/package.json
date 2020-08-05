@@ -23,7 +23,6 @@
     "eslint": "7.6.0",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-plugin-import": "2.22.0",
-    "ts-node-dev": "^1.0.0-pre.56",
-    
+    "ts-node-dev": "^1.0.0-pre.56"
   }
 }
