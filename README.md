@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://github.com/hebertcisco/Proffy/blob/master/.github/logo.png?raw=true" alt="Proffy" width="280"/>
+   <img src="https://github.com/hebertcisco/Proffy/blob/main/.github/logo.png?raw=true" alt="Proffy" width="280"/>
 </p>
 
 <p align="center">	
@@ -11,7 +11,7 @@
   <a aria-label="Completed" href="https://nextlevelweek.com/episodios/omnistack/edicao/2">
     <img src="https://img.shields.io/badge/Proffy-NLW 2.0-8257E5?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAALVBMVEVHcExxWsF0XMJzXMJxWcFsUsD///9jRrzY0u6Xh9Gsn9n39fyMecy0qd2bjNJWBT0WAAAABHRSTlMA2Do606wF2QAAAGlJREFUGJVdj1cWwCAIBLEsRU3uf9xobDH8+GZwUYi8i6ucJwrxKE+7D0G9Q4vlYqtmCSjndr4CgCgzlyFgfKfKCVO0LrPKjmiqMxGXkJwNnXskqWG+1oSM+BSwD8f29YLNjvx/OQrn+g99oQSoNmt3PgAAAABJRU5ErkJggg=="></img>
   </a>
-  <a href="https://github.com/hebertcisco/proffy/commits/master">
+  <a href="https://github.com/hebertcisco/proffy/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/hebertcisco/proffy?color=774DD6">
   </a> 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-8257E5">
@@ -50,8 +50,8 @@
 
 ### Web Screenshot
 <div style="display: flex; flex-direction: 'row'; align-items: 'center';">
-   <img src="https://github.com/hebertcisco/Proffy/blob/master/.github/web-landing.png?raw=true" width="400px">
-   <img src="https://github.com/hebertcisco/Proffy/blob/master/.github/web-list.png.png?raw=true" width="400px">
+   <img src="https://github.com/hebertcisco/Proffy/blob/main/.github/web-landing.png?raw=true" width="400px">
+   <img src="https://github.com/hebertcisco/Proffy/blob/main/.github/web-list.png.png?raw=true" width="400px">
 </div>
 
 ### Mobile Screenshot
@@ -132,7 +132,7 @@ Feel free to **file a new issue** with a respective title and description on the
 Released in 2020 :closed_book: License
 
 Made with love by [Hebert F. Barros](https://github.com/hebertcisco) 🚀.
-This project is under the [MIT license](https://github.com/hebertcisco/Proffy/master/LICENSE).
+This project is under the [MIT license](https://github.com/hebertcisco/Proffy/main/LICENSE).
 
 
 Give a ⭐️ if this project helped you!
