@@ -1,26 +1,26 @@
 import "./styles.scss";
 
 import React from "react";
-import WhatsAppIcon from "../../assets/images/icons/whatsapp.svg";
-import { api } from "../../services/api";
+import {api} from "../../services/api";
+import whatsappIcon from "../../assets/images/icons/whatsapp.svg";
 
 export interface Teacher {
+  id: number;
   avatar: string;
   bio: string;
   cost: number;
-  id: number;
   name: string;
   subject: string;
-  whatsapp: string;
+  whatsapp: number;
 }
 
 interface TeacherItemProps {
   teacher: Teacher;
 }
 
-export const TeacherItem: React.FC<TeacherItemProps> = ({
+export const TeacherItem: React.FunctionComponent<TeacherItemProps> = ({
   teacher,
-}: TeacherItemProps) => {
+}) => {
   function createNewConnection() {
     api.post("connections", {
       user_id: teacher.id,
@@ -31,29 +31,24 @@ export const TeacherItem: React.FC<TeacherItemProps> = ({
     <article className="teacher-item">
       <header>
         <img src={teacher.avatar} alt={teacher.name} />
-
         <div>
           <strong>{teacher.name}</strong>
           <span>{teacher.subject}</span>
         </div>
       </header>
-
       <p>{teacher.bio}</p>
-
       <footer>
         <p>
-          Price/hour
-          <strong>R$ {teacher.cost}</strong>
+          Price/Hour
+          <strong>{teacher.cost}</strong>
         </p>
-
         <a
-          onClick={createNewConnection}
           target="_blank"
-          href={`https://wa.me/${teacher.whatsapp}`}
-          rel="noreferrer"
+          onClick={createNewConnection}
+          href={`https://wa.me/${teacher.whatsapp}?text=Hello%20There`}
         >
-          <img src={WhatsAppIcon} alt="WhatsApp" />
-          Get in touch
+          <img src={whatsappIcon} alt="Whatsapp" />
+          Contact
         </a>
       </footer>
     </article>
