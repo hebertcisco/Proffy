@@ -1,35 +1,61 @@
-import './styles.css'
+import "./styles.scss";
 
 import React from "react";
-import whatsappIcon from "../../assets/images/icons/whatsapp.svg";
-export function TeacherItem() {
+import WhatsAppIcon from "../../assets/images/icons/whatsapp.svg";
+import { api } from "../../services/api";
+
+export interface Teacher {
+  avatar: string;
+  bio: string;
+  cost: number;
+  id: number;
+  name: string;
+  subject: string;
+  whatsapp: string;
+}
+
+interface TeacherItemProps {
+  teacher: Teacher;
+}
+
+export const TeacherItem: React.FC<TeacherItemProps> = ({
+  teacher,
+}: TeacherItemProps) => {
+  function createNewConnection() {
+    api.post("connections", {
+      user_id: teacher.id,
+    });
+  }
+
   return (
     <article className="teacher-item">
       <header>
-        <img
-          src="https://avatars2.githubusercontent.com/u/45374044?s=460&u=d95e9a7efaee1aced34f4b9d9510e7bd663c4985&v=4"
-          alt="Hebert Cisco"
-        />
+        <img src={teacher.avatar} alt={teacher.name} />
+
         <div>
-          <strong>Hebert Cisco</strong>
-          <span>Physics</span>
+          <strong>{teacher.name}</strong>
+          <span>{teacher.subject}</span>
         </div>
       </header>
-      <p>
-        I had not yet realized, as a student, that a deeper knowledge of the
-        basic principles of physics was directly linked to more complex
-        mathematical methods.
-      </p>
+
+      <p>{teacher.bio}</p>
+
       <footer>
         <p>
-          Price per hour<strong>{`${20}$`}</strong>
+          Price/hour
+          <strong>R$ {teacher.cost}</strong>
         </p>
 
-        <button>
-          <img src={whatsappIcon} alt="Whatsapp Icon" />
-          Get in touch.
-        </button>
+        <a
+          onClick={createNewConnection}
+          target="_blank"
+          href={`https://wa.me/${teacher.whatsapp}`}
+          rel="noreferrer"
+        >
+          <img src={WhatsAppIcon} alt="WhatsApp" />
+          Get in touch
+        </a>
       </footer>
     </article>
   );
-}
+};
