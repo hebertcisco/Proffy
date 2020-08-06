@@ -10,6 +10,30 @@
     label {
       color: $text-in-primary;
     }
+    button {
+      background: $secondary;
+      color: $button-text;
+
+      width: 100%;
+      height: 5.6rem;
+
+      border: 0;
+      border-radius: 0.8rem;
+
+      font: 700 1.6rem "Archivo";
+      text-decoration: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transition: background 0.2s;
+      margin-top: 3.2rem;
+
+      &:hover {
+        background: $secondary-dark;
+      }
+    }
   }
 
   main {
@@ -25,12 +49,35 @@
     #search-teachers {
       display: grid;
 
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       column-gap: 16px;
 
       position: absolute;
       bottom: -28px;
+      button {
+        background: $secondary;
+        color: $button-text;
 
+        width: 100%;
+        height: 5.6rem;
+
+        border: 0;
+        border-radius: 0.8rem;
+
+        font: 700 1.6rem "Archivo";
+        text-decoration: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: background 0.2s;
+        margin-top: 3.2rem;
+
+        &:hover {
+          background: $secondary-dark;
+        }
+      }
       .input-block {
         + .input-block {
           margin-top: 0;
@@ -48,8 +95,6 @@
       padding: 3.2rem 0;
       max-width: 740px;
       margin: 0 auto;
-
-
     }
   }
 }
