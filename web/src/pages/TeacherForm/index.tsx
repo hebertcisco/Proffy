@@ -132,6 +132,7 @@ export function TeacherForm() {
                 { value: "Geography", label: "Geography" },
                 { value: "History", label: "History" },
                 { value: "Spanish", label: "Spanish" },
+                { value: "Physics", label: "Physics" },
               ]}
             />
             <Input
@@ -197,7 +198,7 @@ export function TeacherForm() {
 
           <footer>
             <p>
-              <img src={WarningIcon} alt="Aviso Importante" />
+              <img src={WarningIcon} alt="Important warning" />
               Important! <br />
               Fill in all the details
             </p>
