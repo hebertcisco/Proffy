@@ -1,0 +1,21 @@
+{
+  "name": "Proffy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "start:server": "yarn --cwd ./packages/server knex:migrate && yarn --cwd ./packages/server start",
+    "start:web": "yarn --cwd ./packages/web start"
+  },
+  "repository": "https://github.com/hebertcisco/Proffy.git",
+  "author": "Hebert Cisco <tecnobertinfo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
