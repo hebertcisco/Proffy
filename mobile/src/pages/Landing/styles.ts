@@ -1,11 +1,11 @@
 import { StyleSheet } from "react-native";
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#8257E5",
     justifyContent: "center",
     padding: 40,
+    backgroundColor: "#8657e5",
   },
 
   banner: {
@@ -14,11 +14,11 @@ export const styles = StyleSheet.create({
   },
 
   title: {
+    marginTop: 80,
     fontFamily: "Poppins_400Regular",
-    color: "#FFF",
     fontSize: 20,
     lineHeight: 30,
-    marginTop: 80,
+    color: "#fff",
   },
 
   titleBold: {
@@ -26,18 +26,18 @@ export const styles = StyleSheet.create({
   },
 
   buttonsContainer: {
-    flexDirection: "row",
     marginTop: 40,
-    justifyContent: "space-between",
   },
 
   button: {
-    height: 150,
-    width: "48%",
-    backgroundColor: "#333",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 16,
+    padding: 8,
+    height: 80,
+    width: "100%",
     borderRadius: 8,
-    padding: 24,
-    justifyContent: "space-between",
   },
 
   buttonPrimary: {
@@ -49,17 +49,20 @@ export const styles = StyleSheet.create({
   },
 
   buttonText: {
+    marginLeft: 24,
     fontFamily: "Archivo_700Bold",
-    color: "#FFF",
     fontSize: 20,
+    color: "#fff",
   },
 
-  totalConnections: {
+  totalConnection: {
+    marginTop: 40,
+    maxWidth: 140,
     fontFamily: "Poppins_400Regular",
-    color: "#d4c2ff",
     fontSize: 12,
     lineHeight: 20,
-    maxWidth: 140,
-    marginTop: 40,
+    color: "#d4c2ff",
   },
 });
+
+export default styles;
