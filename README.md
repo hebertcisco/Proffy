@@ -20,6 +20,10 @@
   </a>
 </p>
 
+
+<p align="center">Gostou o projeto? Por favor considere <a href="https://github.com/hebertcisco/hebertcisco/blob/main/.github/patreon.md">ser um apoiador</a> e receba brindes exclusivos!
+ </p>
+ 
 > :rocket: Project made to connect teachers to students, made in Next Level Week #2 @Rocketseat
 
 # :pushpin: Table of Contents
